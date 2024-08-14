@@ -35,7 +35,7 @@ if not missing_columns_csv1 and not missing_columns_csv2:
     differences = differences.drop(columns=['_merge'])
 
     # Salvar as diferenças em um novo CSV
-    differences.to_csv('differences.csv', index=False)
+    differences.to_csv('./output/differences.csv', index=False)
 
     print("Comparação concluída. As diferenças foram salvas em 'differences.csv'.")
 else:
